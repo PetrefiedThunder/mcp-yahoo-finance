@@ -1,0 +1,37 @@
+{
+  "name": "mcp-yahoo-finance",
+  "version": "1.0.0",
+  "description": "MCP server for Yahoo Finance \u2014 quotes, charts, fundamentals, options",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "yahoo-finance",
+    "stocks",
+    "market-data",
+    "finance"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "bin": {
+    "mcp-yahoo-finance": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PetrefiedThunder/mcp-yahoo-finance"
+  }
+}
