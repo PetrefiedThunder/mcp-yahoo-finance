@@ -1,26 +1,32 @@
 # mcp-yahoo-finance
 
-MCP server for Yahoo Finance data. Real-time quotes, historical prices, fundamentals, options, and trending tickers. No API key required.
+Get stock quotes, historical prices, financials, and market data from Yahoo Finance.
+
+> **Free API** — No API key required.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `get_quote` | Real-time quotes for one or more symbols |
-| `get_chart` | Historical OHLCV price data with configurable range/interval |
-| `search_symbols` | Search for tickers by company name or keyword |
-| `get_fundamentals` | Key financial statistics, income/balance/cashflow statements |
-| `get_options` | Options chain data (calls and puts) |
-| `get_trending` | Trending tickers by region |
+| `get_quote` | Get real-time stock quote for one or more symbols. |
+| `get_chart` | Get historical price data (OHLCV) for a symbol. |
+| `search_symbols` | Search for stock/ETF/fund symbols by name or keyword. |
+| `get_fundamentals` | Get key financial statistics and fundamentals for a stock. |
+| `get_options` | Get options chain data for a stock. |
+| `get_trending` | Get trending tickers in a specific market. |
 
-## Install
+## Installation
 
 ```bash
+git clone https://github.com/PetrefiedThunder/mcp-yahoo-finance.git
+cd mcp-yahoo-finance
 npm install
 npm run build
 ```
 
 ## Usage with Claude Desktop
+
+Add to your `claude_desktop_config.json`:
 
 ```json
 {
@@ -33,9 +39,11 @@ npm run build
 }
 ```
 
-## No API Key Required
+## Usage with npx
 
-Uses Yahoo Finance's public endpoints. No authentication needed.
+```bash
+npx mcp-yahoo-finance
+```
 
 ## License
 
