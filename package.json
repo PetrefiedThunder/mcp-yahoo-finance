@@ -1,7 +1,7 @@
 {
   "name": "mcp-yahoo-finance",
   "version": "1.0.0",
-  "description": "MCP server for Yahoo Finance \u2014 quotes, charts, fundamentals, options",
+  "description": "MCP server for Yahoo Finance — quotes, charts, fundamentals, options",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -16,7 +16,7 @@
     "finance"
   ],
   "author": "",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "type": "module",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
